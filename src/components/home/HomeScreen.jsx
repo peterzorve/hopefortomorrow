@@ -2,7 +2,7 @@
 import React, { useState }  from 'react'
 import Title from '../Title/Title'
 import SkillsComponent from './SkillsComponent'
-import HeroSection3 from './HeroSection3'
+import Home1 from './Home1'
 import Hero from './Hero'
 import Gallery from '../Gallery/Gallery'
 
@@ -16,7 +16,10 @@ const HomeScreen = () => {
   };
   return (
     <div>
-        <HeroSection3/>
+      <Title subTitle="" title="hope for tomorrow foundation"/>
+      {/* <Title subTitle="Building the next generation of students" title=""/> */}
+        <Home1/>
+        {/* <Home1/> */}
         <Hero onButtonClick={handleButtonClick} galleryTitle={galleryTitle}/>
         {isSecondComponentVisible && <Gallery/>}
         

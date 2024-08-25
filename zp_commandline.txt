@@ -15,10 +15,12 @@ Commands:
 
 npm install gh-pages --save-dev
 git init 
+
 git add .
-git status
 git commit -m "first commit"
 git push origin main
+npm run build
+npx gh-pages -d dist
 
 ******************************************
 
